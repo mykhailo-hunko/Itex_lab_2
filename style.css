@@ -1,0 +1,32 @@
+#tabs {
+   position: relative;
+   }
+   .tab, .tab-title {
+    display: inline-block; 
+   }
+   .tab input[type="radio"] { display: none; }
+   .tab-title {
+    background: #ccc; 
+    padding: 5px 10px; 
+    border-bottom: none; 
+   }
+   .tab-content {
+    position: absolute; top: 100px; 
+    padding: 10px; 
+    left: 0; 
+    width: calc(100% - 20px); 
+    display: none; 
+   }
+   .tab :checked + .tab-title {
+    position: relative; 
+    background: #fff; 
+    top: 1px; 
+    z-index: 1; 
+   }
+   .tab :checked ~ .tab-content {
+    display: block; 
+   }
+   .floating{
+    position: relative;
+    float: right;
+   }
