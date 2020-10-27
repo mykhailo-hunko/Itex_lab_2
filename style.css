@@ -21,7 +21,6 @@
     position: relative; 
     background: #fff; 
     top: 1px; 
-    z-index: 1; 
    }
    .tab :checked ~ .tab-content {
     display: block; 
